@@ -1,0 +1,3 @@
+/env
+*.pickle
+.DS_Store
