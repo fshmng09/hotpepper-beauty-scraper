@@ -10,6 +10,8 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 class HotpepperBeautyScraper():
   
@@ -17,7 +19,7 @@ class HotpepperBeautyScraper():
     self.pageLimit = 20
     self.colLimit = 20
     self.place="harajuku"
-    self.baseUrl = "https://beauty.hotpepper.jp/svcSA/stc0570060/PN"
+    self.baseUrl="https://beauty.hotpepper.jp/svcSA/stc0570060/PN"
   
   def setup_method(self, method):
     self.driver = webdriver.Chrome()
